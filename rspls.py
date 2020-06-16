@@ -40,9 +40,9 @@ def number_to_name(number):
 
 def rpsls(player_choice):
     print("")
-    print("Player Choice : " + player_choice)
+    print("Player Choice : " + player_choice.lower())
     # Get number according to player choice
-    player_number = name_to_number(player_choice)
+    player_number = name_to_number(player_choice.lower())
     
     # Get random number for computer choice
     comp_number = ranNum(0,5) # 0,1,2,3,4
